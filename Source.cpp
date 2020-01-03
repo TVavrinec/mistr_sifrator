@@ -40,6 +40,8 @@ int main()
 			std::cout << "zadej soubor k desifraci - pokud neni ve slozce s programem musis zadat celou jeho adresu" << endl;
 			cin >> inFile;
 			inFile += ".txt";
+			std::cout << "zadej stupen sifrovani" << endl;
+			cin >> stupen_sifrovani;
 			fstream InFile(inFile, ios::in);
 			char pomocna;
 			char data[256];
@@ -219,7 +221,6 @@ int main()
 			
 			if (dotaz0 == "anicka")
 			{
-				std::cout << "jsi tu";
 				goto DEKODER;
 			}
 			else if (dotaz0 != "pokracuj")
